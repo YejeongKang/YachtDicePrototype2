@@ -215,6 +215,7 @@
     <Image Include="qMark.bmp" />
     <Image Include="res\YachtDicePrototype2.ico" />
     <Image Include="SINGLE.bmp" />
+    <Image Include="START.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -61,9 +61,8 @@ CYachtDicePrototype2Dlg::CYachtDicePrototype2Dlg(CWnd* pParent /*=nullptr*/)
 void CYachtDicePrototype2Dlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
-	DDX_Control(pDX, IDC_BUTTON1, m_single_bmp);
-	DDX_Control(pDX, IDC_BUTTON2, m_dual_bmp);
 	DDX_Control(pDX, IDC_BUTTON3, m_q_bmp);
+	DDX_Control(pDX, IDC_BUTTON1, m_start_bmp);
 }
 
 BEGIN_MESSAGE_MAP(CYachtDicePrototype2Dlg, CDialogEx)
@@ -72,7 +71,6 @@ BEGIN_MESSAGE_MAP(CYachtDicePrototype2Dlg, CDialogEx)
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_BUTTON3, &CYachtDicePrototype2Dlg::OnBnClickedButton3)
 	ON_BN_CLICKED(IDC_BUTTON1, &CYachtDicePrototype2Dlg::OnBnClickedButton1)
-	ON_BN_CLICKED(IDC_BUTTON2, &CYachtDicePrototype2Dlg::OnBnClickedButton2)
 END_MESSAGE_MAP()
 
 
@@ -114,12 +112,9 @@ BOOL CYachtDicePrototype2Dlg::OnInitDialog()
 
 	main.Load(_T("main_noBT.png"));//이미지 로드
 
-	m_single_bmp.LoadBitmaps(IDB_BITMAP1, IDB_BITMAP2, NULL, NULL); // 첫 번째 인자에는 추가한 비트맵 ID명
-	m_single_bmp.SizeToContent(); // 이미지 크기에 버튼 크기를 맞춰주는 작업
+	m_start_bmp.LoadBitmaps(IDB_BITMAP4, NULL, NULL, NULL); // 첫 번째 인자에는 추가한 비트맵 ID명
+	m_start_bmp.SizeToContent(); // 이미지 크기에 버튼 크기를 맞춰주는 작업
 
-	m_dual_bmp.LoadBitmaps(IDB_BITMAP2, NULL, NULL, NULL); // 첫 번째 인자에는 추가한 비트맵 ID명
-	m_dual_bmp.SizeToContent(); // 이미지 크기에 버튼 크기를 맞춰주는 작업
-	
 	m_q_bmp.LoadBitmaps(IDB_BITMAP3, NULL, NULL, NULL); // 첫 번째 인자에는 추가한 비트맵 ID명
 	m_q_bmp.SizeToContent(); // 이미지 크기에 버튼 크기를 맞춰주는 작업
 
@@ -201,13 +196,5 @@ void CYachtDicePrototype2Dlg::OnBnClickedButton1()
 {
 	CNameSetting dlgN1;
 	dlgN1.DoModal();
-	// TODO: Add your control notification handler code here
-}
-
-
-void CYachtDicePrototype2Dlg::OnBnClickedButton2()
-{
-	CNameSetting dlgN2;
-	dlgN2.DoModal();
 	// TODO: Add your control notification handler code here
 }

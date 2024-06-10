@@ -12,6 +12,7 @@
 #define IDD_NAME_DIALOG                 132
 #define IDB_BITMAP3                     134
 #define IDD_TUTORIAL_DIALOG             135
+#define IDB_BITMAP4                     137
 #define IDC_BUTTON1                     1000
 #define IDC_BUTTON2                     1001
 #define IDC_EDIT_NAME                   1003
@@ -22,7 +23,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        137
+#define _APS_NEXT_RESOURCE_VALUE        138
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1006
 #define _APS_NEXT_SYMED_VALUE           101

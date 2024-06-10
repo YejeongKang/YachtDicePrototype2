@@ -80,5 +80,8 @@
     <Image Include="qMark.bmp">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="START.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
