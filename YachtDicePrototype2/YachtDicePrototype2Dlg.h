@@ -36,4 +36,8 @@ public:
 
 	CBitmapButton m_single_bmp;
 	CBitmapButton m_dual_bmp;
+	afx_msg void OnBnClickedButton3();
+	CBitmapButton m_q_bmp;
+	afx_msg void OnBnClickedButton1();
+	afx_msg void OnBnClickedButton2();
 };

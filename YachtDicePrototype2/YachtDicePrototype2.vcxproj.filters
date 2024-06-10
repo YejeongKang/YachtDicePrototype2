@@ -33,6 +33,12 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CTutorial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CNameSetting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="YachtDicePrototype2.cpp">
@@ -42,6 +48,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CTutorial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CNameSetting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -63,6 +75,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="DUAL.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qMark.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
